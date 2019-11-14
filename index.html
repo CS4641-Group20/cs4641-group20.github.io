@@ -67,28 +67,35 @@
         <div class="row tm-section-pad-top">
           <div class="col-lg-4">
             <i class="fas fa-4x fa-bus text-center tm-icon"></i>
-            <h4 class="text-center tm-text-primary mb-4">Header 1</h4>
+            <h4 class="text-center tm-text-primary mb-4">Data Set</h4>
             <p>
               The data set used in this analysis comes from the Fatality Analysis Reporting System (FARS) run by the National Highway Traffic Saftey Administration (NHTSA).
               The data is collected on crashes that occur throughout the US and includes all crashes resulting in injury or fatality in 2018. The full data set includes a
               wealth of information on outcomes for each vehicle and person involved in the crash, as well as a number of variables relating to the crash and the emergency response.
               The below analysis is done by person and includes factors that were selected as the most likely to predict level of injury. Factors that occured after the crash, such as
-              emergency response time and time of death were ignored. Examples of factors used include road type, vehicle type, and position of person in the vehicle.  
+              emergency response time and time of death were ignored. Examples of factors used include road type, vehicle type, and position of person in the vehicle. Catagorical
+              factors were expanded with binary dummy variables to allow for inclusion of all possible factors. The outcome for
+              each person has 5 possible levels of injury, "No Apparent Injury", "Possible Injury", "Suspected Minor Injury", "Suspected Serious Injury", and "Fatal Injury". In some
+              models these were grouped into 3 outcomes, "No Injury", "Injury", and "Fatal Injury". When incomplete data was trimmed from the set the final data had 18 input features and 60,000 data points.
             </p>
           </div>
 
         <div class="col-lg-4 mt-5 mt-lg-0">
           <i class="fas fa-4x fa-bicycle text-center tm-icon"></i>
-          <h4 class="text-center tm-text-primary mb-4">Header 2</h4>
+          <h4 class="text-center tm-text-primary mb-4">Analysis Methods</h4>
           <p>
-            Double Crap
+            Unsupervised methods used included PCA to reduce data set and speed up model training and Mutual Information to select most relevant columns. Supervised methods tested include Decision Trees, Neural Networks,
+            SVM, and GLM to classify each person by injury level.
           </p>
         </div>
         <div class="col-lg-4 mt-5 mt-lg-0">
           <i class="fas fa-4x fa-city text-center tm-icon"></i>
-          <h4 class="text-center tm-text-primary mb-4">Header 3</h4>
+          <h4 class="text-center tm-text-primary mb-4">Conclusions</h4>
           <p>
-            Shit
+            Each model was trained and tested using 5 fold cross validation to assess effectiveness at predicting injury level of a person. With 5 injury levels the highest
+            prediction accuracy was []% using a [model] with the [parameters]. For 3 levels the highest prediction accuracy was []% using a [model] with [parameters].
+            Each model was tested with a number of different parameteres to determine the best set, as described below. Given the large number of factors that involved in
+            a crash and the level of randomness in how injuries occur, these levels of prediction accuracy are considered acceptable.
           </p>
         </div>
       </div>
