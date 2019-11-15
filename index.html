@@ -94,8 +94,8 @@
         <div class="col-lg-4 mt-5 mt-lg-0">
           <h4 class="text-center tm-text-primary mb-4">Conclusions</h4>
           <p>
-            Each model was trained and tested using 5 fold cross validation to assess effectiveness at predicting injury level of a person. With 5 injury levels the highest
-            prediction accuracy was []% using a [model] with the [parameters]. For 3 levels the highest prediction accuracy was []% using a [model] with [parameters].
+            Each model was trained and tested using 5 fold cross validation to assess effectiveness at predicting injury level of a person. With 3 injury levels the highest
+            prediction accuracy was 71% using linear SVM with the [parameters].
             Each model was tested with a number of different parameteres to determine the best set, as described below. Given the large number of factors that involved in
             a crash and the level of randomness in how injuries occur, these levels of prediction accuracy are considered high.
           </p>
@@ -106,9 +106,14 @@
       <div class="container tm-container-gallery">
         <div class="row">
           <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Our Work</h2>
+              <h2 class="tm-text-primary tm-section-title mb-4">Mutual Information Analysis</h2>
               <img src="img/normalized_mutual_info.png" alt="Mutual Info"/>
-              <p>Mutual Information analysis</p>
+              <p>
+                The above plot shows the normalized mutual information between each of the dataset features and the injury severity. The top 7 features are pictured out of
+                16 tested. This shows that the 3 best features for determining the injury level are the first harmful event in a crash, the use of protection by the person,
+                and whether the person was fully or partially ejected from a vehicle. This suggests that in order to prevent injury in crashes focus should be placed on
+                making sure that all passengers are using appropriate protection, and in ensuring redesigning vehicles to ensure that occupants are not ejected. 
+              </p>
           </div>
         </div>
       </div>
