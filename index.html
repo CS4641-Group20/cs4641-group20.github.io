@@ -81,23 +81,20 @@
           </div>
 
         <div class="col-lg-4 mt-5 mt-lg-0">
-          <h4 class="text-center tm-text-primary mb-4">Analysis Methods</h4>
+          <h4 class="text-center tm-text-primary mb-4">Data Formatting</h4>
           <p>
-            Preliminary data analysis focused on choosing the relevant factors to remove extraneous factors and to improve runtime of model training.
-            Unsupervised methods used included Mutual Information to select most relevant columns of data and PCA to reduce data set and speed up model training.
-            In some models the possible outcomes were grouped into 3 outcomes, "No Injury", "Injury", and "Fatality".
-            Catagorical factors were expanded with binary dummy variables to allow for inclusion of all possible factors.
-            Supervised learning methods were used on the final data set to predict the injury level of people in the test data set. Methods
-            tested include Decision Trees, Neural Networks, SVM, and GLM to classify each person by injury level.
+              Data formatting ...
           </p>
         </div>
         <div class="col-lg-4 mt-5 mt-lg-0">
-          <h4 class="text-center tm-text-primary mb-4">Conclusions</h4>
+          <h4 class="text-center tm-text-primary mb-4">Analysis Methods</h4>
           <p>
-            Each model was trained and tested using 5 fold cross validation to assess effectiveness at predicting injury level of a person. With 3 injury levels the highest
-            prediction accuracy was 71% using linear SVM with the [parameters].
-            Each model was tested with a number of different parameteres to determine the best set, as described below. Given the large number of factors that involved in
-            a crash and the level of randomness in how injuries occur, these levels of prediction accuracy are considered high.
+              Preliminary data analysis focused on choosing the relevant factors to remove extraneous factors and to improve runtime of model training.
+              Unsupervised methods used included Mutual Information to select most relevant columns of data and PCA to reduce data set and speed up model training.
+              In some models the possible outcomes were grouped into 3 outcomes, "No Injury", "Injury", and "Fatality".
+              Catagorical factors were expanded with binary dummy variables to allow for inclusion of all possible factors.
+              Supervised learning methods were used on the final data set to predict the injury level of people in the test data set. Methods
+              tested include Decision Trees, Neural Networks, SVM, and GLM to classify each person by injury level.
           </p>
         </div>
       </div>
@@ -170,6 +167,22 @@
               </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section>
+        <div class="container tm-container-gallery">
+          <div class="row">
+              <div class="tm-intro-text-container">
+                  <center><h2 class="tm-text-primary tm-section-title mb-4">Conclusions</h2></center>
+                  <p class="mb-4 tm-intro-text">
+                      Each model was trained and tested using 5 fold cross validation to assess effectiveness at predicting injury level of a person. With 3 injury levels the highest
+                      prediction accuracy was 71% using linear SVM with the [parameters].
+                      Each model was tested with a number of different parameteres to determine the best set, as described below. Given the large number of factors that involved in
+                      a crash and the level of randomness in how injuries occur, these levels of prediction accuracy are considered high.
+                  </p>
+              </div>
+          </div>
       </div>
     </section>
 
