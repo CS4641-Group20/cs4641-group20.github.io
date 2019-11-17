@@ -79,7 +79,7 @@
         <div class="col-lg-4 mt-5 mt-lg-0">
           <h4 class="text-center tm-text-primary mb-4">Data Formatting</h4>
           <p>
-              Factors that occured after the crash, such as emergency response time and time of death were ignored. This decision was made in part because it would be trivial to determine the injury level with features such as whether or not the person was taken to the hospital or the time of death. This also does not help accomplish the goal of detemrining how to improve safety precautions in vehicles, so we excluded all features that occured as a result of the crash. This reduced the number of features to 17 and when incomplete data was trimmed from the set the final data had approximately 60,000 data points. The final change was grouping injury severity into 3 outcomes: "No Injury", "Injury", and "Fatality" as five categories would lead to poor prediction accuracy.           
+              Factors that occured after the crash, such as emergency response time and time of death were ignored. This decision was made in part because it would be trivial to determine the injury level with features such as whether or not the person was taken to the hospital or the time of death. This also does not help accomplish the goal of detemrining how to improve safety precautions in vehicles, so we excluded all features that occured as a result of the crash. This reduced the number of features to 17 and when incomplete data was trimmed from the set the final data had approximately 60,000 data points. The final change was grouping injury severity into 3 outcomes: "No Injury", "Injury", and "Fatality" as five categories would lead to poor prediction accuracy.
           </p>
         </div>
         <div class="col-lg-4 mt-5 mt-lg-0">
@@ -106,20 +106,6 @@
         </div>
       </div>
     </section>
-    <section id="work" class="tm-section-pad-top">
-      <div class="container tm-container-gallery">
-        <div class="row">
-          <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Confusion Matrix</h2>
-              <img src="img/confusion_matrix.png" alt="Mutual Info"/>
-              <p>
-                The above confusion matrix shows the ability of our model to predict the correct injury level of a person involved in a crash.
-              </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="work" class="tm-section-pad-top">
       <div class="container tm-container-gallery">
         <div class="row">
@@ -161,7 +147,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="work" class="tm-section-pad-top">
         <div class="container tm-container-gallery">
           <div class="row">
               <div class="tm-intro-text-container">
@@ -176,7 +162,19 @@
           </div>
       </div>
     </section>
-
+    <section id="work" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-text-primary tm-section-title mb-4">Confusion Matrix</h2>
+              <img src="img/confusion_matrix.png" alt="Mutual Info"/>
+              <p>
+                The above confusion matrix shows the ability of our model to predict the correct injury level of a person involved in a crash.
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="reference" class="tm-section-pad-top tm-parallax-2">
       <div class="container tm-container-contact">
         <div class="row">
