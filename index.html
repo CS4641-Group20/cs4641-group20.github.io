@@ -72,29 +72,20 @@
             <h4 class="text-center tm-text-primary mb-4">Data Set</h4>
             <p>
               The full data set includes a wealth of information on outcomes for each vehicle and person involved in the crash, as well as
-              a number of variables relating to the crash and the emergency response.
-              The below analysis is done by person and includes factors that were selected as the most likely to predict level of
-              injury. Factors that occured after the crash, such as emergency response time and time of death were ignored. The
-              outcome for each person has 5 possible levels of injury, "No Apparent Injury", "Possible Injury", "Suspected Minor Injury", "Suspected Serious Injury",
-              and "Fatal Injury". When incomplete data was trimmed from the set the final data had 17 input features and 60,000 data points.
+              a number of variables relating to the crash and the emergency response. In total, it includes over 80,000 data points representing persons involved in the crash and 61 input features. The features range from type of road to collision orientation and many others.  The outcome for each individual has 5 possible levels of injury: "No Apparent Injury", "Possible Injury", "Suspected Minor Injury", "Suspected Serious Injury", and "Fatal Injury". We hope to perform an analysis on the features present in the data and determine factors that are the most likely to predict this level of injury.
             </p>
           </div>
 
         <div class="col-lg-4 mt-5 mt-lg-0">
           <h4 class="text-center tm-text-primary mb-4">Data Formatting</h4>
           <p>
-              Data formatting ...
+              Factors that occured after the crash, such as emergency response time and time of death were ignored. This decision was made in part because it would be trivial to determine the injury level with features such as whether or not the person was taken to the hospital or the time of death. This also does not help accomplish the goal of detemrining how to improve safety precautions in vehicles, so we excluded all features that occured as a result of the crash. This reduced the number of features to 17 and when incomplete data was trimmed from the set the final data had approximately 60,000 data points. The final change was grouping injury severity into 3 outcomes: "No Injury", "Injury", and "Fatality" as five categories would lead to poor prediction accuracy.           
           </p>
         </div>
         <div class="col-lg-4 mt-5 mt-lg-0">
           <h4 class="text-center tm-text-primary mb-4">Analysis Methods</h4>
           <p>
-              Preliminary data analysis focused on choosing the relevant factors to remove extraneous factors and to improve runtime of model training.
-              Unsupervised methods used included Mutual Information to select most relevant columns of data and PCA to reduce data set and speed up model training.
-              In some models the possible outcomes were grouped into 3 outcomes, "No Injury", "Injury", and "Fatality".
-              Catagorical factors were expanded with binary dummy variables to allow for inclusion of all possible factors.
-              Supervised learning methods were used on the final data set to predict the injury level of people in the test data set. Methods
-              tested include Decision Trees, Neural Networks, SVM, and GLM to classify each person by injury level.
+              Preliminary data analysis focused on choosing the relevant factors to remove extraneous factors and to improve runtime of model training. Unsupervised methods used included using mutual information to select the most relevant columns of data. Catagorical factors were expanded with binary dummy variables to allow for inclusion of all possible factors, so PCA was also applied to reduce dimensionality and speed up model training since the majority of feature were categorical. Supervised learning methods were used on the final data set to predict the injury level of people in the test data set. Methods tested include decision trees, neural networks, SVM, and random forests to classify each person by injury level.
           </p>
         </div>
       </div>
