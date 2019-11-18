@@ -141,7 +141,8 @@
                   <center><h2 class="tm-text-primary tm-section-title mb-4">Conclusions</h2></center>
                   <p class="mb-4 tm-intro-text">
                       Each model was trained and tested using 5 fold cross validation to assess effectiveness at predicting injury level of a person. With 3 injury levels the highest
-                      prediction accuracy was 71% using linear SVM with the [parameters].
+                      prediction accuracy was 72% using linear SVM with the a K value of 16. A K value of 12 is considered to be optimal in this case, as there is very little increase in any
+                      performance metrics with higher K values, while model training time increases substantially. At this value prediction accuracy, precision, recall and F1-score are all 0.71.
                       Each model was tested with a number of different parameteres to determine the best set, as described below. Given the large number of factors that involved in
                       a crash and the level of randomness in how injuries occur, these levels of prediction accuracy are considered high.
                   </p>
