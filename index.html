@@ -15,7 +15,7 @@
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
         <div class="container">
           <div class="tm-next">
-              <a href="#hero" class="navbar-brand">Car Crash: Injury Prediction</a>
+              <a href="#hero" class="navbar-brand">Car Accidents: Injury Prediction</a>
           </div>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -106,28 +106,15 @@
         </div>
       </div>
     </section>
-    <section id="work" class="tm-section-pad-top">
-      <div class="container tm-container-gallery">
-        <div class="row">
-          <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Influence of K Values of Model</h2>
-              <img src="img/normalized_mutual_info.png" alt="Mutual Info"/>
-              <p>
-                The above chart shows the influence of K values on the model.
-              </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section id="work" class="tm-section-pad-top">
       <div class="container tm-container-gallery">
         <div class="row">
           <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Output vs Best Feature</h2>
-              <img src="img/normalized_mutual_info.png" alt="Mutual Info"/>
+              <h2 class="tm-text-primary tm-section-title mb-4">Output vs High Information Feature</h2>
+              <img src="img/ejection_vs_injury.png" alt="High Info"/>
               <p>
-                The above chart shows the relationship between the output and the best feature.
+                The above chart shows the relationship between injury severity and a feature that has high mutual information. There is a lot of distinction in outcomes between being ejected and not being ejected.
               </p>
           </div>
         </div>
@@ -137,10 +124,10 @@
       <div class="container tm-container-gallery">
         <div class="row">
           <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Output vs Worst Feature</h2>
-              <img src="img/normalized_mutual_info.png" alt="Mutual Info"/>
+              <h2 class="tm-text-primary tm-section-title mb-4">Output vs Low Information Feature</h2>
+              <img src="img/fire_vs_injury.png" alt="Low Info"/>
               <p>
-                The above chart shows the relationship between the output and the worst feature.
+                This chart shows the relationship between injuries and a low mutual information feature. It is eviednt that the propportions are much more similar than a high information feature.
               </p>
           </div>
         </div>
@@ -169,7 +156,20 @@
               <h2 class="tm-text-primary tm-section-title mb-4">Confusion Matrix</h2>
               <img src="img/confusion_matrix.png" alt="Mutual Info"/>
               <p>
-                The above confusion matrix shows the ability of our model to predict the correct injury level of a person involved in a crash.
+                The confusion matrix shows the ability of our model to predict the correct injury level of a person involved in a crash.
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-text-primary tm-section-title mb-4">Influence of K Values of Model</h2>
+              <img src="img/kvalues.png" alt="Mutual Info"/>
+              <p>
+                The above chart shows the influence of K values on the model.
               </p>
           </div>
         </div>
@@ -190,6 +190,8 @@
                     <li>F. L. Mannering and C. R. Bhat, “Analytic methods in accident research: methodological frontier and future directions,” Analytic Methods in Accident Research, vol. 1, pp. 1–22, 2014.</li>
                     </br>
                     <li>Chong, Miao & Abraham, Ajith & Paprzycki, Marcin. (2005). Traffic Accident Analysis Using Machine Learning Paradigms.. Informatica (Slovenia). 29. 89-98.</li>
+                    </br>
+                    <li>Doquire, G. & Verleysen, Michel. (2011). An hybrid approach to feature selection for mixed categorical and continuous data. KDIR 2011 - Proceedings of the International Conference on Knowledge Discovery and Information Retrieval. 394-401. </li>
                   </ol>
                 </p>
             </div>
